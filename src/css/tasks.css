@@ -1,0 +1,46 @@
+.daily-tasks {
+  padding: 10px 15px 15px;
+  background-color: var(--tasks-bg);
+  box-shadow: var(--daily-tasks-shadow);
+  color: var(--tasks-txt);
+  min-height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+}
+.daily-tasks__heading {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.daily-tasks__sub-heading {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+@media screen and (min-width: 371px) {
+  .daily-tasks__sub-heading br {
+    display: none;
+  }
+}
+.daily-tasks__btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--button-txt);
+  border: 1px solid;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow .2s, background-color .2s;
+}
+.daily-tasks__btn:focus {
+  outline: none;
+}
+.daily-tasks__btn:disabled {
+  opacity: .7;
+  cursor: default;
+  pointer-events: none;
+}

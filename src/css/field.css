@@ -1,0 +1,122 @@
+.daily-tasks-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin: 0 0 20px;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid var(--input-border-dark);
+}
+.daily-tasks-field:last-child {
+  margin-bottom: 0;
+}
+.daily-tasks-field:before {
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  counter-increment: fieldCounter;
+  content: counters(fieldCounter,".") ".";
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+.daily-tasks-field:after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--daily-tasks-field-after-bg);
+  transition: opacity .2s;
+}
+.daily-tasks-field_done:after {
+  opacity: 1;
+  z-index: 1;
+}
+.daily-tasks-field__input,
+.daily-tasks-field__task {
+  appearance: none;
+  margin: 0 auto 0 0;
+  flex: 1 1 auto;
+  max-width: 57%;
+}
+@media screen and (min-width: 391px) {
+  .daily-tasks-field__input,
+  .daily-tasks-field__task {
+    max-width: 100%;
+  }
+}
+.daily-tasks-field__input {
+  line-height: 1;
+  padding: 7px 12px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+}
+.daily-tasks-field__input:focus {
+  outline: none;
+}
+.daily-tasks-field__input:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--input-border-dark);
+}
+.daily-tasks-field__task {
+  padding: 4px 6px;
+  line-height: 1.5;
+  color: var(--form-txt);
+}
+.daily-tasks-field_done .daily-tasks-field__task {
+  text-decoration: line-through;
+}
+.daily-tasks-field__btn {
+  padding: 0;
+  margin-left: 10px;
+}
+.daily-tasks-field__remove-btn,
+.daily-tasks-field__save-btn,
+.daily-tasks-field__edit-btn {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+}
+.daily-tasks-field__remove-btn {
+  background-color: var(--remove-bg);
+  border-color: var(--remove-bg);
+  /*margin-left: auto;*/
+}
+.daily-tasks-field__remove-btn:hover {
+  background-color: transparent;
+  color: var(--remove-bg);
+}
+.daily-tasks-field__remove-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--remove-bg);
+}
+.daily-tasks-field__save-btn {
+  background-color: var(--save-bg);
+  border-color: var(--save-bg);
+  order: 100;
+}
+.daily-tasks-field__save-btn:hover {
+  background-color: transparent;
+  color: var(--save-bg);
+}
+.daily-tasks-field__save-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--save-bg);
+}
+.daily-tasks-field__edit-btn {
+  background-color: var(--edit-bg);
+  border-color: var(--edit-bg);
+}
+.daily-tasks-field__edit-btn:hover {
+  background-color: transparent;
+  color: var(--edit-bg);
+}
+.daily-tasks-field__edit-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--edit-bg);
+}

@@ -1,0 +1,39 @@
+:root {
+  --main-bg: #141414;
+  --main-txt: #fff;
+  --tasks-bg: #252525;
+  --tasks-txt: #fff;
+  --form-txt: #fff;
+  --button-txt: #fff;
+  --add-bg: #4757ec;
+  --remove-bg: #de3d39;
+  --save-bg: #248e47;
+  --edit-bg: #a868a0;
+  --clear-bg: #53503a;
+  --input-bg: #fff;
+  --input-border: #c2c2c2;
+  --input-border-dark: #8c8c8c;
+  --scroll-track: #303030;
+  --scroll-thumb: #575757;
+  --daily-tasks-shadow: 0 0 1rem rgba(0,0,0,.4);
+  --daily-tasks-field-after-bg: rgba(0,0,0,.25);
+}
+
+.light-mode {
+  --main-bg: #f7f7f7;
+  --main-txt: #0c0c0c;
+  --tasks-bg: #e8edf5;
+  --tasks-txt: #292929;
+  --form-txt: #292929;
+  --button-txt: #f0f0f0;
+  --add-bg: #4f5df6;
+  --remove-bg: #e9413d;
+  --save-bg: #259c51;
+  --edit-bg: #c17ab9;
+  --clear-bg: #827f5c;
+  --input-bg: #fff;
+  --input-border: #cecece;
+  --input-border-dark: #a3a3a3;
+  --daily-tasks-shadow: 0 0 .7rem rgba(0,0,0,.2);
+  --daily-tasks-field-after-bg: rgba(170, 184, 207, .49);
+}
