@@ -84,7 +84,7 @@ gulp.task('html', function () {
 // });
 gulp.task('js', function () {
   return gulp.src('./src/js/**/*')
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulp.dest('dist/js'));
 });
 
