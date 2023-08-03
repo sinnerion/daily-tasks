@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Daily tasks app</title>
   <meta name="description" content="Daily tasks app - learning JavaScript">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-<button class="theme-toggle" aria-label="Изменить тему оформления"></button>
+<button class="theme-toggle" title="Change the theme" aria-label="Change the theme"></button>
 
 <div class="container">
   <section class="daily-tasks">
@@ -21,6 +22,19 @@
     <div class="daily-tasks-form" id="dailyTasksForm">
 
       <form class="daily-tasks-form__tasks" id="dailyTasksFormTasks">
+
+        <div class="daily-tasks-field d-none" id="dailyTasksField">
+          <input class="daily-tasks-field__input" type="text" aria-label="Task">
+          <p class="daily-tasks-field__task"></p>
+          <button class="daily-tasks__btn daily-tasks-field__btn daily-tasks-field__remove-btn d-none"
+                  type="button" title="Remove"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <button class="daily-tasks__btn daily-tasks-field__btn daily-tasks-field__save-btn d-none"
+                  type="button" title="Save"><i class="fa fa-check" aria-hidden="true"></i></button>
+          <button class="daily-tasks__btn daily-tasks-field__btn daily-tasks-field__edit-btn" type="button"
+                  title="Edit" aria-label="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+          <label class="custom-checkbox daily-tasks-field-checkbox" title="Ready / not ready"
+                 aria-label="Ready / not ready"><input class="custom-checkbox__input daily-tasks-field-checkbox__input" type="checkbox">
+            <span class="custom-checkbox__label"></span></label></div>
 
       </form>
 
@@ -40,8 +54,7 @@
   </section>
 </div>
 
-<script src="js/theme.js"></script>
-<script src="js/index.js"></script>
+<script src="js/index.js" type="module"></script>
 
 </body>
 </html>
