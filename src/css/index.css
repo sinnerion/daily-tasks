@@ -1,1 +1,69 @@
-@import "vars.css";@import "theme.css";@import "tasks.css";@import "form.css";@import "field.css";@import "checkbox.css";*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}html{scrollbar-color:var(--scroll-thumb) var(--scroll-track);scrollbar-width:thin}html::-webkit-scrollbar{width:10px;height:10px}html::-webkit-scrollbar-track{background:var(--scroll-track)}html::-webkit-scrollbar-thumb{background:var(--scroll-thumb)}body{margin:0;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100vh;font-family:'Segoe UI',sans-serif;font-size:16px;line-height:1.5;background-color:var(--main-bg);color:var(--main-txt)}.container{padding:35px 15px 15px;margin-left:auto;margin-right:auto;width:1200px;max-width:100%}@media screen and (min-width:1270px){.container{padding:15px}}h1,p{margin-top:0}.d-none{display:none!important}
+@import "vars.css";
+@import "theme.css";
+@import "tasks.css";
+@import "form.css";
+@import "field.css";
+@import "checkbox.css";
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+html {
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+  scrollbar-width: thin
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--scroll-track)
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--main-bg);
+  color: var(--main-txt)
+}
+
+.container {
+  padding: 35px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  max-width: 100%
+}
+
+@media screen and (min-width: 1270px) {
+  .container {
+    padding: 15px
+  }
+}
+
+h1, p {
+  margin-top: 0
+}
+
+.d-none {
+  display: none !important
+}

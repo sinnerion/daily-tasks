@@ -1,1 +1,117 @@
-.daily-tasks-form{color:var(--form-txt);-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.daily-tasks-form,.daily-tasks-form__buttons,.daily-tasks-form__tasks{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.daily-tasks-form__tasks{counter-reset:fieldCounter;margin-bottom:15px}.daily-tasks-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:auto}@media screen and (min-width:441px){.daily-tasks-form__buttons{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}.daily-tasks-form__btn{width:100%;margin-top:5px;margin-bottom:5px}@media screen and (min-width:441px){.daily-tasks-form__btn{width:auto;min-width:120px;margin-top:0;margin-bottom:0}}.daily-tasks-form__add-btn{background-color:var(--add-bg);border-color:var(--add-bg)}.daily-tasks-form__add-btn:hover{background-color:transparent;color:var(--add-bg)}.daily-tasks-form__add-btn:focus-visible{-webkit-box-shadow:0 0 0 2px var(--add-bg);box-shadow:0 0 0 2px var(--add-bg)}.daily-tasks-form__save-btn{background-color:var(--save-bg);border-color:var(--save-bg)}.daily-tasks-form__save-btn:hover{background-color:transparent;color:var(--save-bg)}.daily-tasks-form__save-btn:focus-visible{-webkit-box-shadow:0 0 0 2px var(--save-bg);box-shadow:0 0 0 2px var(--save-bg)}.daily-tasks-form__clear-btn{background-color:var(--clear-bg);border-color:var(--clear-bg);margin-bottom:0}.daily-tasks-form__clear-btn:hover{background-color:transparent;color:var(--clear-bg)}.daily-tasks-form__clear-btn:focus-visible{-webkit-box-shadow:0 0 0 2px var(--clear-bg);box-shadow:0 0 0 2px var(--clear-bg)}@media screen and (min-width:441px){.daily-tasks-form__add-btn{margin-left:auto;margin-right:5px}.daily-tasks-form__save-btn{margin-left:5px;margin-right:5px}.daily-tasks-form__clear-btn{margin-right:auto;margin-left:5px}}
+.daily-tasks-form {
+  color: var(--form-txt);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+
+.daily-tasks-form, .daily-tasks-form__buttons, .daily-tasks-form__tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.daily-tasks-form__tasks {
+  counter-reset: fieldCounter;
+  margin-bottom: 15px
+}
+
+.daily-tasks-form__buttons {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: auto
+}
+
+@media screen and (min-width: 441px) {
+  .daily-tasks-form__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+}
+
+.daily-tasks-form__btn {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+
+@media screen and (min-width: 441px) {
+  .daily-tasks-form__btn {
+    width: auto;
+    min-width: 120px;
+    margin-top: 0;
+    margin-bottom: 0
+  }
+}
+
+.daily-tasks-form__add-btn {
+  background-color: var(--add-bg);
+  border-color: var(--add-bg)
+}
+
+.daily-tasks-form__add-btn:hover {
+  background-color: transparent;
+  color: var(--add-bg)
+}
+
+.daily-tasks-form__add-btn:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px var(--add-bg);
+  box-shadow: 0 0 0 2px var(--add-bg)
+}
+
+.daily-tasks-form__save-btn {
+  background-color: var(--save-bg);
+  border-color: var(--save-bg)
+}
+
+.daily-tasks-form__save-btn:hover {
+  background-color: transparent;
+  color: var(--save-bg)
+}
+
+.daily-tasks-form__save-btn:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px var(--save-bg);
+  box-shadow: 0 0 0 2px var(--save-bg)
+}
+
+.daily-tasks-form__clear-btn {
+  background-color: var(--clear-bg);
+  border-color: var(--clear-bg);
+  margin-bottom: 0
+}
+
+.daily-tasks-form__clear-btn:hover {
+  background-color: transparent;
+  color: var(--clear-bg)
+}
+
+.daily-tasks-form__clear-btn:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px var(--clear-bg);
+  box-shadow: 0 0 0 2px var(--clear-bg)
+}
+
+@media screen and (min-width: 441px) {
+  .daily-tasks-form__add-btn {
+    margin-left: auto;
+    margin-right: 5px
+  }
+
+  .daily-tasks-form__save-btn {
+    margin-left: 5px;
+    margin-right: 5px
+  }
+
+  .daily-tasks-form__clear-btn {
+    margin-right: auto;
+    margin-left: 5px
+  }
+}

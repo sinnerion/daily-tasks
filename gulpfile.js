@@ -50,9 +50,9 @@ gulp.task('css:minify', function() {
       .pipe(autoprefixer('last 10 versions'))
       .pipe(csso())
       .pipe(concat('index.css'))
-      .pipe(purgecss({
-        content: ['src/**/*.html']
-      }))
+      // .pipe(purgecss({
+      //   content: ['src/**/*.html']
+      // }))
       .pipe(gulp.dest('dist/css'))
 });
 
