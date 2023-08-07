@@ -69,6 +69,7 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('src/js/**/*')
+  .pipe(concat('index.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js'));
 });

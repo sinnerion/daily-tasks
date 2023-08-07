@@ -50,7 +50,7 @@
   -webkit-transition: opacity .2s;
   transition: opacity .2s
 }
-
+.daily-tasks-field_done:after {opacity: 1;z-index: 1;}
 .daily-tasks-field__input, .daily-tasks-field__task {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -89,7 +89,7 @@
   line-height: 1.5;
   color: var(--form-txt)
 }
-
+.daily-tasks-field_done .daily-tasks-field__task {text-decoration: line-through;}
 .daily-tasks-field__btn {
   padding: 0;
   margin-left: 10px
