@@ -1,8 +1,8 @@
 @import "vars.css";
 @import "theme.css";
 @import "tasks.css";
-@import "form.css";
 @import "field.css";
+@import "form.css";
 @import "checkbox.css";
 
 *, ::after, ::before {

@@ -95,7 +95,9 @@
   margin-left: 10px
 }
 
-.daily-tasks-field__edit-btn, .daily-tasks-field__remove-btn, .daily-tasks-field__save-btn {
+.daily-tasks__btn.daily-tasks-field__edit-btn,
+.daily-tasks__btn.daily-tasks-field__remove-btn,
+.daily-tasks__btn.daily-tasks-field__save-btn {
   width: 32px;
   height: 32px;
   -webkit-box-flex: 0;
@@ -103,22 +105,22 @@
   flex: 0 0 32px
 }
 
-.daily-tasks-field__remove-btn {
+.daily-tasks__btn.daily-tasks-field__remove-btn {
   background-color: var(--remove-bg);
   border-color: var(--remove-bg)
 }
 
-.daily-tasks-field__remove-btn:hover {
+.daily-tasks__btn.daily-tasks-field__remove-btn:hover {
   background-color: transparent;
   color: var(--remove-bg)
 }
 
-.daily-tasks-field__remove-btn:focus-visible {
+.daily-tasks__btn.daily-tasks-field__remove-btn:focus-visible {
   -webkit-box-shadow: 0 0 0 2px var(--remove-bg);
   box-shadow: 0 0 0 2px var(--remove-bg)
 }
 
-.daily-tasks-field__save-btn {
+.daily-tasks__btn.daily-tasks-field__save-btn {
   background-color: var(--save-bg);
   border-color: var(--save-bg);
   -webkit-box-ordinal-group: 101;
@@ -126,27 +128,27 @@
   order: 100
 }
 
-.daily-tasks-field__save-btn:hover {
+.daily-tasks__btn.daily-tasks-field__save-btn:hover {
   background-color: transparent;
   color: var(--save-bg)
 }
 
-.daily-tasks-field__save-btn:focus-visible {
+.daily-tasks__btn.daily-tasks-field__save-btn:focus-visible {
   -webkit-box-shadow: 0 0 0 2px var(--save-bg);
   box-shadow: 0 0 0 2px var(--save-bg)
 }
 
-.daily-tasks-field__edit-btn {
+.daily-tasks__btn.daily-tasks-field__edit-btn {
   background-color: var(--edit-bg);
   border-color: var(--edit-bg)
 }
 
-.daily-tasks-field__edit-btn:hover {
+.daily-tasks__btn.daily-tasks-field__edit-btn:hover {
   background-color: transparent;
   color: var(--edit-bg)
 }
 
-.daily-tasks-field__edit-btn:focus-visible {
+.daily-tasks__btn.daily-tasks-field__edit-btn:focus-visible {
   -webkit-box-shadow: 0 0 0 2px var(--edit-bg);
   box-shadow: 0 0 0 2px var(--edit-bg)
 }
