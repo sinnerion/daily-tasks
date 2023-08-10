@@ -11,6 +11,17 @@ import tasksStateSaving from './modules/tasksStateSaving.js';
 import tasksStateClearing from './modules/tasksStateClearing.js';
 import handleThemeToggling from './modules/handleThemeToggling.js';
 
+window.addEventListener('load', async () => {
+  if(navigator.serviceWorker) {
+    try {
+      const reg = await navigator.serviceWorker.register('/sw.js');
+      console.log('Service worker register - success', reg);
+    } catch (e) {
+      console.log('Service worker register - fail');
+    }
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   /* Константы */
   const dailyTasksFormTasks = document.getElementById('dailyTasksFormTasks'),

@@ -49,7 +49,7 @@ gulp.task('css:minify', function() {
   return gulp.src('src/css/**/*.css')
       .pipe(autoprefixer('last 10 versions'))
       .pipe(csso())
-      .pipe(concat('index.css'))
+      .pipe(concat('app.css'))
       // .pipe(purgecss({
       //   content: ['src/**/*.html']
       // }))
@@ -69,7 +69,7 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('src/js/**/*')
-  .pipe(concat('index.js'))
+  .pipe(concat('app.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js'));
 });
